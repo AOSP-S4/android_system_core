@@ -434,7 +434,7 @@ void get_hardware_name(char *hardware, unsigned int *revision)
 void import_kernel_cmdline(int in_qemu,
                            void (*import_kernel_nv)(char *name, int in_qemu))
 {
-    char cmdline[1536];
+    char cmdline[2048];
     char *ptr;
     int fd;
 
